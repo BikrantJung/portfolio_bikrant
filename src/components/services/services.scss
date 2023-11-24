@@ -1,17 +1,23 @@
 @import "../../app.scss";
 .services {
   background: linear-gradient(180deg, #0c0c1d, #111132);
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  height: 100%;
+  .heading-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5em 0;
+  }
   .textContainer {
     flex: 1;
     align-self: flex-end;
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 1rem 0;
 
     @include mobile {
       align-self: center;

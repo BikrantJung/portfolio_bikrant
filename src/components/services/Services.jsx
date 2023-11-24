@@ -34,28 +34,37 @@ const Services = () => {
       ref={ref}
       animate={"animate"}
     >
-      <motion.div className="textContainer" variants={variants}>
-        <p>
-          I focus on helping your brand grow
-          <br /> and move forward
-        </p>
-        <hr />
-      </motion.div>
-      <motion.div className="titleContainer" variants={variants}>
-        <div className="title">
-          <img src="/people.webp" alt="" />
-          <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
-          </h1>
-        </div>
-        <div className="title">
-          <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
-          </h1>
-          <button>WHAT WE DO?</button>
-        </div>
-      </motion.div>
-      <motion.div className="listContainer" variants={variants}>
+      <div className="heading-text">
+        <motion.div
+          className="textContainer expertise-section"
+          variants={variants}
+        >
+          <p>
+            <motion.b whileHover={{ color: "orange" }}>Architect</motion.b> the
+            backend
+            <br /> <motion.b whileHover={{ color: "orange" }}>
+              Design
+            </motion.b>{" "}
+            the frontend
+          </p>
+          <hr />
+        </motion.div>
+        <motion.div className="titleContainer" variants={variants}>
+          <div className="title">
+            <img src="/people.webp" alt="" />
+            <h1>
+              <motion.b whileHover={{ color: "orange" }}>API Design</motion.b>
+            </h1>
+          </div>
+          <div className="title">
+            <h1>
+              <motion.b whileHover={{ color: "orange" }}>Developing</motion.b>
+            </h1>
+            <button>WHAT WE DO?</button>
+          </div>
+        </motion.div>
+      </div>
+      {/* <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
@@ -63,9 +72,7 @@ const Services = () => {
           <h2>Branding</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            libero
           </p>
           <button>Go</button>
         </motion.div>
@@ -108,7 +115,7 @@ const Services = () => {
           </p>
           <button>Go</button>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 };

@@ -9,20 +9,24 @@ import Services from "./components/services/Services";
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <Cursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
       </section>
       <section id="Services">
-        <Parallax type="services" />
+        <Parallax
+          text="My Expertise"
+          background={"dark"}
+          imageType={"planets"}
+        />
       </section>
       <section>
         <Services />
       </section>
       <section id="Portfolio">
-        <Parallax type="portfolio" />
+        <Parallax text={"Projects"} imageType={"sun"} />
       </section>
       <Portfolio />
       <section id="Contact">

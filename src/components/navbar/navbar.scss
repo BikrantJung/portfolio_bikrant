@@ -4,7 +4,9 @@
   height: 100px;
 
   .wrapper {
-    max-width: 1366px;
+    --padding: 2rem;
+    max-width: calc(1366px + 2 * var(--padding));
+    padding: 0 var(--padding);
     margin: auto;
     display: flex;
     align-items: center;
